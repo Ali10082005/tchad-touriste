@@ -1,0 +1,544 @@
+
+/************* style globale **********/
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+   font-style: italic;
+   font-weight: weight;
+   text-align: center;
+}
+
+header > a:hover{
+   border: none;
+}
+
+.hover:hover{
+    transform: scale(1.03); 
+}
+
+div > h1{
+   font-size: 50px; 
+}  
+
+body{
+    max-width: 100%;  
+    background-color: white;
+} 
+/**************************************/
+/************** Header ***************/
+/************************************/
+.entete{
+    background-color: antiquewhite;
+    filter: drop-shadow(16px 16px 10px rgb(52, 52, 54));
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 5px 0; 
+    text-align: center; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.img-header{
+    width: 140px;
+}
+.mon-image{
+    border-radius: 40%;
+    width: 80px;
+    /* height: 150px; */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    justify-content: right;
+    align-items: center;
+    position: relative; 
+
+}
+
+  .nav-links a{
+        color: white;
+        font-size: 20px;
+    }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: rgb(19, 13, 13);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.nav-links a:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* Masquer la case à cocher */
+.nav-checkbox {
+    display: none;
+}
+
+/* Bouton de navigation */
+.nav-toggle {
+    display: none;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+/**************************************/
+/************** Main ***************/
+/************************************/
+
+.main{
+    margin-top: 150px;  
+    padding: 30px; 
+    line-height: 1.6; 
+    background-image: url(image/tchad-bac.JPG);
+    background-size: cover; 
+}
+
+.one{
+   color: white;
+   text-align: center;
+   justify-content: center;
+   font-style: italic;
+}
+
+/********* Le 2 bloque d'image au mileu ************/
+
+.bloque{
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.conteneur{
+    border-radius: 10px;
+    filter: inherit;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.conteneur > a {
+    display: flex;
+}
+.image{
+    width: 100%;
+    height: 300px; 
+    box-shadow: -1px -1px 0px 8px rgba(224, 224, 224, 0.2);
+    border-radius: 10px;
+    transition: transform 0.9s ease;
+}
+ 
+.sous-image {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.sous-image * {
+    width: 100%;
+}
+.sous-image > a {
+    display: flex;
+}
+.petit-img {
+    height: 100px;
+    border-radius: 10px;
+}
+.dans-image{
+    font-size: 22px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bolder;
+    padding-right: 10px;
+    color: wheat;
+    border-radius: 10px;
+    background-color: black;
+}    
+
+/******************La seconde partie ***************/
+
+.second-part{
+    background-image: url(image2/sombre.png);
+    padding: 0 250px;    
+
+}
+.grid2-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.liens{
+    background-color: rgb(116, 111, 111);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding:  20px 50px;
+ }
+
+.center{
+    max-width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 50px;
+    padding: 30px;
+    border-radius: 19px;
+
+}
+.div-img{
+    background-color: beige;
+    gap: 10px;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    max-height: 100%;
+}
+
+.img0{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    height: 200px;
+    width: 350px;
+}
+
+
+.secon-titre{
+    font-size: 19px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+.parag{
+    text-align: justify;
+}
+
+.br{
+    padding: 100px;
+}
+
+/***************third-part***************/
+
+.third-part{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+   padding-top: 100px;
+}
+
+.hymne{
+    background-image: url(image2/backroun.jpg);
+    box-shadow: 2px 2px 5px rgba(247, 252, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    font-style: italic;
+    padding: 10px;
+    font-style: oblique;
+}
+/* Style global pour le formulaire */
+.formulaire {
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+.form {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+h2 ~ input{
+    height: 40px;
+    width: 250px;
+}
+
+select {
+    font-size: 18px; 
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+
+select:hover {
+    border-color: #007BFF;
+    background-color: #f1f9ff;
+}
+
+
+select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Radio buttons */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: black;
+}
+
+.radio-group label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Bouton d'envoi */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #00bfff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    vertical-align: middle;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+/*************** Media query **************/
+
+@media (max-width: 1500px){
+
+   
+    .grid2-2{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+
+    .second-part{
+        padding: 0;
+        font-size: 16px;
+    }
+  
+    .gap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .third-part{
+        padding: 2px;
+    }
+    .hymne{
+        font-size: 16px;
+        padding: 30px;
+    }
+} 
+
+
+@media (max-width: 1000px){
+    .bloque{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1000px){
+   .center {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 20px;
+       padding: 10px;
+   }
+   .third-part{
+    display: flex;
+    flex-direction: column;
+   } 
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Juste en dessous du header */
+        right: 10px;
+        max-width: 250px;
+        background-color: #333;
+        display: none; /* Masqué par défaut */
+    }
+    .navbar {
+        align-items: center;
+    }
+    .nav-checkbox:checked + .nav-toggle + .nav-links {
+        display: flex; /
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .nav-links a{
+        color: white;
+        font-size: 20px;
+    }
+    .nav-links a:hover{
+        background-color: black;
+    }
+
+    .nav-toggle {
+        display: block;        
+        font-size: 28px; 
+        padding: 20px;
+        margin-right: 10px;
+        
+
+    }
+}
+
+
+@media (min-width: 800px){
+    .third-part{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+       }    
+}
+
+
+
+@media (max-width: 600px){
+    .center {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }    
+
+    .main{
+        padding: 2px;
+    }    
+
+    .img0{
+        width: 100%;
+    }
+   .one{
+    margin-top: 10px;
+   } 
+
+   .dans-image{
+    font-size: 15px;   
+   } 
+ 
+   .third-part{
+    display: flex;
+    flex-direction: column;
+   }
+
+}   
+
+
