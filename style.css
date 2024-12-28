@@ -467,14 +467,15 @@ button:active {
     .nav-links {
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Juste en dessous du header */
+        top: 100px; /* Juste en dessous du header */
         right: 10px;
-        max-width: 250px;
+        width: 300px;
         background-color: #333;
         display: none; /* Masqué par défaut */
     }
     .navbar {
         align-items: center;
+        width: 100%;
     }
     .nav-checkbox:checked + .nav-toggle + .nav-links {
         display: flex; /
@@ -538,7 +539,10 @@ button:active {
     display: flex;
     flex-direction: column;
    }
-
+   
+   .nav-links a{
+        font-size: 16px;
+    }
 }   
 
 
