@@ -91,8 +91,8 @@ body{
 
 }
 .nav-links a:hover{
-    background-color: black;
-    color: whitesmoke;
+    opacity: 0.7;
+    border: 1px solid rgb(12, 8, 8);
 }
 
 /* Masquer la case à cocher */
@@ -148,7 +148,7 @@ body{
     margin: 10px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
 }
 .conteneur > a {
     display: flex;
@@ -440,6 +440,10 @@ button:active {
         font-size: 16px;
         padding: 30px;
     }
+    .nav-links a:hover{
+        opacity: 0.7;
+        border: 1px solid rgb(12, 8, 8);
+    }
 } 
 
 
@@ -449,10 +453,8 @@ button:active {
         padding: 0;
         flex-direction: column;
     }
-}
+    
 
-
-@media (max-width: 1000px){
    .center {
        display: grid;
        grid-template-columns: 1fr 1fr;
@@ -467,7 +469,7 @@ button:active {
     .nav-links {
         flex-direction: column;
         position: absolute;
-        top: 100px; /* Juste en dessous du header */
+        top: 95px; /* Juste en dessous du header */
         right: 10px;
         width: 300px;
         background-color: #333;
@@ -494,8 +496,9 @@ button:active {
 
     .nav-toggle {
         display: block;        
-        font-size: 28px; 
+        font-size: 20px; 
         padding: 20px;
+        border-radius: 20px;
         margin-right: 10px;
         
 
@@ -522,7 +525,12 @@ button:active {
 
     .main{
         padding: 2px;
+        background-size: cover;
+        background-position: center; 
+        /* background-color: #333;
+        background-image: none; */
     }    
+
 
     .img0{
         width: 100%;
@@ -543,6 +551,11 @@ button:active {
    .nav-links a{
         font-size: 16px;
     }
+    textarea {
+        width: 270px; /* Réduit la largeur à 90% de l'élément parent */
+        height: 60px; /* Réduit la hauteur */
+      }
+   
 }   
 
 
