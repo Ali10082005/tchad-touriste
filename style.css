@@ -531,7 +531,9 @@ button:active {
         background-image: none; */
     }    
 
-
+    .parag{
+        text-align: none;
+    }
     .img0{
         width: 100%;
     }
